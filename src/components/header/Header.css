@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(90deg, #99bde0, #f8f9fa);
+  text-decoration: none;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.nav-logo a:hover {
+  color: #271de2;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+  text-decoration: none;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px;
+}
+.nav-buttons button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #82b3e4;
+  border: none;
+  color: rgb(49, 44, 44);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.nav-buttons button:hover {
+  background-color: #271de2;
+  transition: ease-in-out 0.5s;
+  color: beige;
+}
+.nav-button button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #3086db;
+  border: none;
+  color: rgb(49, 44, 44);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.nav-button button:hover {
+  background-color: #271de2;
+  transition: ease-in-out 0.5s;
+  color: beige;
+}
+@media (max-width: 767px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+
+  .nav-menu.open {
+    display: block;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    z-index: 2;
+  }
+}

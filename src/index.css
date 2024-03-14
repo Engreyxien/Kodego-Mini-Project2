@@ -1,0 +1,42 @@
+/* Reset default browser styles */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the main container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style for movie cards */
+.movie-card {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Style for movie titles */
+.movie-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for movie descriptions */
+.movie-description {
+  color: #666;
+}
+
+/* Style for movie images */
+.movie-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
