@@ -9,7 +9,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="container">
+    <div className="HomeConntainer">
       <h1>Welcome to the Pekeng Store</h1>
       <p>Explore our amazing products!</p>
     </div>

@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  height: 410px;
+  height: 520px;
   width: 400px;
   margin: 10px;
   padding: 10px;
@@ -12,7 +12,6 @@
   background-color: #f9f9f9;
   position: relative;
 }
-/* Product.css */
 .card button {
   background-color: #3498db;
   color: white;
@@ -33,7 +32,6 @@
   text-align: center;
 }
 
-/* Add top and bottom margins */
 .mt-4 {
   margin-top: 1.5rem;
   height: 30px;
@@ -53,6 +51,12 @@
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
   .mb-1 {
     margin-bottom: 0.5rem;
     border-radius: 5px;
@@ -79,7 +83,7 @@
 }
 
 .card-img-top {
-  height: 200px;
+  height: 300px;
   width: 100%; /* Change width to 100% for responsiveness */
   object-fit: cover;
 }
@@ -116,16 +120,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1050;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: auto;
+  height: auto;
+  z-index: 999;
 }
-
+.modal button {
+  background-color: #396feb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
 .modal-content {
-  max-width: 80%;
+  background-color: #8dc7ed;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 100%;
 }
 
 .modal-header {
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #ccc;
+  background-color: blur(20px) !important;
+  backdrop-filter: blur(5px);
 }
 
 .modal-body {
@@ -133,6 +162,6 @@
 }
 
 .modal-footer {
-  background-color: #f9f9f9;
-  border-top: 1px solid #ccc;
+  background-color: blur(20px);
+  backdrop-filter: blur(5px);
 }

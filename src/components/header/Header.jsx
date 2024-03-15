@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import Product from "../products/Product";
 import Contact from "../footer/Footer";
+import Home from "../home/Home";
+import Register from "../register/Register";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,26 +20,24 @@ const Navbar = () => {
       <div className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="">Home</a>
+            <a href="#Home">Home</a>
           </li>
           <li>
-            <a href="./components/products/Product">Products</a>
+            <a href="#Products">Products</a>
           </li>
           <li>
             <a href="">About Us</a>
           </li>
           <li>
-            <a href="./components/footer/Footer">Contact</a>
+            <a href="#Footer">Contact</a>
           </li>
           <li>
             <a href="">Cart</a>
           </li>
           <div className="nav-buttons">
-            {" "}
             <button>Register</button>
           </div>
           <div className="nav-button">
-            {"  "}
             <button>Login</button>
           </div>
         </ul>
