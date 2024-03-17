@@ -8,6 +8,8 @@ const Navbar = () => {
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
+  const [email, setEmail] = useState("");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -34,8 +36,10 @@ const Navbar = () => {
   };
 
   const handleRegisterNow = () => {
-    // Handle register now logic here
-    console.log("Register now");
+    setIsRegisterModalOpen(true);
+  };
+  const handleCloseRegisterModal = () => {
+    setIsRegisterModalOpen(false);
   };
 
   const handleCloseLoginModal = () => {
@@ -67,10 +71,26 @@ const Navbar = () => {
             <a href="#Cart">Cart</a>
           </li>
           <li>
-            <div className="nav-buttons">
-              <a href="/register">
-                <button>Register</button>
-              </a>
+            <div className="nav-button">
+              <button onClick={handleRegisterNow}>Register</button>
+              {isRegisterModalOpen && (
+                <div className="register-container">
+                  <div className="close" onClick={handleCloseRegisterModal}>
+                    <FaTimes />
+                  </div>
+                  <h2>Register Now</h2>
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                  <input type="password" placeholder="Password" />
+                  <button onClick={handleCloseRegisterModal}>
+                    Register Now
+                  </button>
+                </div>
+              )}
             </div>
           </li>
           <li>

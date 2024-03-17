@@ -72,7 +72,7 @@
   border-radius: 5px;
   background-color: #a4cde9;
   color: #4d4d4d;
-  height: 46px;
+  height: 30px;
   border: none;
   cursor: pointer;
 }
@@ -83,7 +83,7 @@
 }
 
 .card-img-top {
-  height: 300px;
+  height: 320px;
   width: 100%; /* Change width to 100% for responsiveness */
   object-fit: cover;
 }
@@ -118,28 +118,20 @@
 
 .modal {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  position: fixed;
   flex-wrap: wrap;
-  flex-direction: column;
-  position: fixed;
-  top: 50px;
-  margin-left: 25%;
-  margin-right: 25%;
-  width: auto;
-  height: auto;
-  z-index: 999;
-  backdrop-filter: blur(5px);
-}
-.modal-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  backdrop-filter: blur(5px); /* Apply blur effect */
-  z-index: 998; /* Behind the modal content */
+  width: fit-content;
+  height: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 .modal button {
   background-color: #396feb;
@@ -151,8 +143,9 @@
   margin-right: 5px;
 }
 .modal-content {
-  background-color: #8dc7ed;
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  color: azure;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -163,16 +156,6 @@
   max-width: 100%;
 }
 
-.modal-header {
-  background-color: blur(20px) !important;
-  backdrop-filter: blur(5px);
-}
-
 .modal-body {
   padding: 20px;
-}
-
-.modal-footer {
-  background-color: blur(20px);
-  backdrop-filter: blur(5px);
 }
