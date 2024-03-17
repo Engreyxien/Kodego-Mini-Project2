@@ -1,6 +1,6 @@
 /* Default styles for the Footer component */
 .nautide-footer {
-  background-color: #345995;
+  background: linear-gradient(90deg, #808080, #7eb3e7, #3c8edb);
   color: #d9cdcd;
   padding: 2rem;
 }

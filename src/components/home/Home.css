@@ -1,26 +1,38 @@
 /* home.css */
 .HomeConntainer {
+  position: relative;
   display: flex;
-  height: 50vh;
+  height: 59vh;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 100%;
+  max-width: auto;
   margin-bottom: 10px;
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center;
 }
 
+.HomeConntainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/home.jpg");
+  background-size: cover;
+  object-fit: cover;
+  filter: blur(2px);
+  z-index: -1;
+}
 .HomeConntainer h1 {
+  text-align: center;
   color: #422929;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 1px;
   font-size: 2.5rem;
 }
 
-p {
+.HomeConntainer p {
   color: #555151;
   padding: 1.5rem;
   font-size: 1rem;
@@ -30,8 +42,19 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: 100%;
-    height: 30vh;
+    width: auto;
+    background-size: cover;
+    height: auto;
+  }
+  .HomeConntainer h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #422929;
+    font-size: 2.5rem;
   }
 }

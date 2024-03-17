@@ -3,24 +3,30 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(90deg, #99bde0, #f8f9fa);
+  background: linear-gradient(90deg, #3c8edb, #7eb3e7, #d1d0d0);
   text-decoration: none;
 }
-
 .nav-logo a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
   font-size: 1.5rem;
+  margin-left: 20px;
 }
 .nav-logo a:hover {
-  color: #271de2;
+  color: #fff;
+  transition: ease-in-out 0.5s;
 }
-
+.nav-logo a .store {
+  color: #fff;
+}
+.nav-logo a .store:hover {
+  color: #333;
+  transition: ease-in-out 0.5s;
+}
 .nav-menu ul {
   list-style: none;
   display: flex;
-  text-decoration: none;
 }
 
 .nav-menu li {
@@ -30,7 +36,15 @@
   text-decoration: none;
   align-items: center;
 }
-
+.nav-menu ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333333;
+}
+.nav-menu ul li a:hover {
+  color: #271de2;
+  transition: ease-in-out 0.5s;
+}
 .burger {
   display: none;
   flex-direction: column;
@@ -64,6 +78,9 @@
   transition: ease-in-out 0.5s;
   color: beige;
 }
+.nav-buttons a {
+  text-decoration: none;
+}
 .nav-button button {
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +100,9 @@
   background-color: #271de2;
   transition: ease-in-out 0.5s;
   color: beige;
+}
+.nav-button a {
+  text-decoration: none;
 }
 @media (max-width: 767px) {
   .nav-menu {

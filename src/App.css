@@ -6,17 +6,3 @@ body {
   margin: 0;
   padding: 0;
 }
-.section #Home {
-  background: linear-gradient(90deg, #99bde0, #f8f9fa);
-}
-@media screen and (max-width: 768px) {
-  .section #Home {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}

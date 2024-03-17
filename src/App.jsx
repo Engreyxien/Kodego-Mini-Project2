@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Product from "./components/products/Product";
+import About from "./components/aboutus/About";
 import Home from "./components/home/Home";
 
 const App = () => {
@@ -22,13 +23,17 @@ const App = () => {
 
     fetchData();
   }, []);
-
   return (
     <div>
-      <Header />
-      <section className="section" id="Home">
+      <nav>
+        <Header />
+      </nav>
+      <section id="Home">
         <Home />
-        <div className="products" id="Products">
+        <div id="About">
+          <About />
+        </div>
+        <div id="Product">
           <Product products={products} />
         </div>
       </section>

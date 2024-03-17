@@ -5,6 +5,8 @@ import Product from "../products/Product";
 import Contact from "../footer/Footer";
 import Home from "../home/Home";
 import Register from "../register/Register";
+import Login from "../login/Login";
+import AboutUs from "../aboutus/About";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,7 +17,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-logo">
-        <a href="/">Pekeng Store</a>
+        <a href="/">
+          Pekeng <span className="store">Store</span>
+        </a>
       </div>
       <div className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
         <ul>
@@ -23,22 +27,26 @@ const Navbar = () => {
             <a href="#Home">Home</a>
           </li>
           <li>
-            <a href="#Products">Products</a>
+            <a href="#About">About Us</a>
           </li>
           <li>
-            <a href="">About Us</a>
+            <a href="#Product">Products</a>
           </li>
           <li>
             <a href="#Footer">Contact</a>
           </li>
           <li>
-            <a href="">Cart</a>
+            <a href="#Cart">Cart</a>
           </li>
           <div className="nav-buttons">
-            <button>Register</button>
+            <Link to="/register">
+              <button>Register</button>
+            </Link>
           </div>
           <div className="nav-button">
-            <button>Login</button>
+            <Link to="/login">
+              <button>Login</button>
+            </Link>
           </div>
         </ul>
       </div>
