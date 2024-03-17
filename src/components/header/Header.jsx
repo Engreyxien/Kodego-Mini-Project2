@@ -1,17 +1,45 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Header.css";
-import Product from "../products/Product";
-import Contact from "../footer/Footer";
-import Home from "../home/Home";
-import Register from "../register/Register";
-import Login from "../login/Login";
-import AboutUs from "../aboutus/About";
+import { Link } from "react-router-dom";
+import { FaGoogle, FaFacebook, FaTimes } from "react-icons/fa";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleLogin = () => {
+    // Handle login logic here
+    console.log("Logging in...");
+  };
+
+  const handleGoogleLogin = () => {
+    // Handle Google login logic here
+    console.log("Logging in with Google...");
+  };
+
+  const handleFacebookLogin = () => {
+    // Handle Facebook login logic here
+    console.log("Logging in with Facebook...");
+  };
+
+  const handleForgotPassword = () => {
+    // Handle forgot password logic here
+    console.log("Forgot password?");
+  };
+
+  const handleRegisterNow = () => {
+    // Handle register now logic here
+    console.log("Register now");
+  };
+
+  const handleCloseLoginModal = () => {
+    setIsLoginModalOpen(false);
   };
 
   return (
@@ -38,16 +66,55 @@ const Navbar = () => {
           <li>
             <a href="#Cart">Cart</a>
           </li>
-          <div className="nav-buttons">
-            <Link to="/register">
-              <button>Register</button>
-            </Link>
-          </div>
-          <div className="nav-button">
-            <Link to="/login">
-              <button>Login</button>
-            </Link>
-          </div>
+          <li>
+            <div className="nav-buttons">
+              <a href="/register">
+                <button>Register</button>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="nav-button">
+              <button onClick={() => setIsLoginModalOpen(true)}>Login</button>
+              {isLoginModalOpen && (
+                <div className="login-container">
+                  <div className="close" onClick={handleCloseLoginModal}>
+                    <FaTimes />
+                  </div>
+                  <h2>Login</h2>
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                  <button onClick={handleLogin}>Login</button>
+                  <button onClick={handleGoogleLogin}>
+                    <FaGoogle /> Login with Google
+                  </button>
+                  <button onClick={handleFacebookLogin}>
+                    <FaFacebook /> Login with Facebook
+                  </button>
+                  <div>
+                    <a href="#" onClick={handleForgotPassword}>
+                      Forgot password?
+                    </a>
+                  </div>
+                  <div>
+                    <button onClick={handleRegisterNow}>
+                      Don't have an account yet? Register now
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+          </li>
         </ul>
       </div>
       <div className="burger" onClick={toggleMenu}>

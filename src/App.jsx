@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Product from "./components/products/Product";
@@ -23,6 +24,7 @@ const App = () => {
 
     fetchData();
   }, []);
+
   return (
     <div>
       <nav>
@@ -30,16 +32,14 @@ const App = () => {
       </nav>
       <section id="Home">
         <Home />
-        <div id="About">
-          <About />
-        </div>
-        <div id="Product">
-          <Product products={products} />
-        </div>
       </section>
-      <div id="Footer">
-        <Footer id="Footer" />
-      </div>
+      <section id="About">
+        <About />
+      </section>
+      <section id="Product">
+        <Product products={products} />
+      </section>
+      <Footer id="Footer" />
     </div>
   );
 };
