@@ -42,6 +42,7 @@ const AboutUs = () => {
         suppliers, ensuring that you get the best value for your money. <br />{" "}
         Thank you for choosing our store for your shopping needs.
       </p>
+      <img src="./assets/aboutus.webp" alt="" />
     </div>
   );
 };

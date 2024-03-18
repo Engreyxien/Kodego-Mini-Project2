@@ -42,6 +42,16 @@ const Footer = () => {
             />
             <span>Google Play Store</span>
           </div>
+          <div className="contacts">
+            <ul className="contact-info">
+              <li>
+                Address : 123 Main Street, Anytown, Romblon, Philippines 12345
+              </li>
+              <li>Contact : 123-456-7890</li>
+              <li>Email : 0d7wH@example.com</li>
+              <li>Phone : 0912-3456-7890</li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

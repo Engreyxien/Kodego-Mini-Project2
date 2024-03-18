@@ -1,5 +1,6 @@
 /* Product.css */
 .card {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -7,10 +8,17 @@
   width: 400px;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #191919;
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background: blur(10px);
   position: relative;
+}
+.card:hover {
+  background: rgba(41, 40, 40, 0.2);
+  transition: ease-in-out 0.5s;
+}
+.card img {
+  object-fit: cover;
 }
 .card button {
   background-color: #3498db;
@@ -27,7 +35,13 @@
   background-color: #2980b9;
   transform: scale(1.1);
 }
-/* Center the form */
+.text-center mt-4 mb-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
 .text-center {
   text-align: center;
 }
@@ -42,10 +56,10 @@
 }
 
 .mb-1 {
-  margin-bottom: 0.5rem;
+  margin-top: 0.05rem;
   border-radius: 5px;
   color: rgb(131, 123, 123);
-  height: 30px;
+  height: 50px;
   width: 500px;
   border: none;
   cursor: pointer;
@@ -73,7 +87,6 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-
     border-radius: 4px;
   }
   .modal-content {
@@ -94,11 +107,12 @@
   }
 }
 .mb-2 {
-  margin-bottom: 0.5rem;
+  margin-top: 0.05rem;
+  margin-left: 0.1rem;
   border-radius: 5px;
   background-color: #a4cde9;
   color: #4d4d4d;
-  height: 30px;
+  height: 50px;
   border: none;
   cursor: pointer;
 }

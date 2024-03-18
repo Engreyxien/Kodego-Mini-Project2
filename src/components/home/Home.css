@@ -2,13 +2,13 @@
 .HomeConntainer {
   position: relative;
   display: flex;
-  height: 59vh;
+  height: 80vh;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   max-width: auto;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   font-family: Arial, sans-serif;
 }
 

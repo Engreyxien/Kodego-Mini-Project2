@@ -116,10 +116,11 @@ const Navbar = () => {
                   />
                   <button onClick={handleLogin}>Login</button>
                   <button onClick={handleGoogleLogin}>
-                    <FaGoogle /> Login with Google
+                    <FaGoogle />
+                    <span>Login with Google</span>
                   </button>
                   <button onClick={handleFacebookLogin}>
-                    <FaFacebook /> Login with Facebook
+                    <FaFacebook /> <span>Login with Facebook</span>
                   </button>
                   <div>
                     <a href="#" onClick={handleForgotPassword}>

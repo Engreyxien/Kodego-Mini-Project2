@@ -39,7 +39,9 @@ const App = () => {
       <section id="Product">
         <Product products={products} />
       </section>
-      <Footer id="Footer" />
+      <footer id="Footer">
+        <Footer id="Footer" />
+      </footer>
     </div>
   );
 };
