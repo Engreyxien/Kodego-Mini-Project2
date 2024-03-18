@@ -14,8 +14,8 @@ const Footer = () => {
             <li>Support</li>
           </ul>
           <p>
-            © 2024 Pekeng Store. All Rights Reserved. All content on this
-            platform is the property of Pekeng-Store.Inc. Duplication and
+            © 2024 Only Me Store. All Rights Reserved. All content on this
+            platform is the property of Only Me-Store.Inc. Duplication and
             copying are strictly prohibited.
           </p>
         </div>
@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="PekengStore">
-          <h3>Pekeng Store App</h3>
+          <h3>Only Me Store App</h3>
           <div className="img flexSB">
             <img
               src="https://img.icons8.com/color/48/000000/apple-app-store--v3.png"
