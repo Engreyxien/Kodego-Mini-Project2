@@ -65,10 +65,10 @@ const Navbar = () => {
             <a href="#Product">Products</a>
           </li>
           <li>
-            <a href="#Footer">Contact</a>
+            <a href="#Cart">Cart</a>
           </li>
           <li>
-            <a href="#Cart">Cart</a>
+            <a href="#Footer">Contact</a>
           </li>
           <li>
             <div className="nav-button">
