@@ -50,7 +50,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-logo">
         <a href="/">
-          Only Me <span className="store">Store</span>
+          Bakay Diri <span className="store">Store</span>
         </a>
       </div>
       <div className={`nav-menu ${isMenuOpen ? "open" : ""}`}>

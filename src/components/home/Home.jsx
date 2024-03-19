@@ -10,7 +10,7 @@ function Home() {
 
   return (
     <div className="HomeConntainer">
-      <h1>Welcome to Only Me Store</h1>
+      <h1>Welcome to Bakay Diri Store</h1>
       <p>Explore our amazing products!</p>
     </div>
   );
