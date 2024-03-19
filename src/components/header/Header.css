@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(90deg, #3c8edb, #7eb3e7, #d1d0d0);
+  background-color: #0081a7;
   text-decoration: none;
 }
 .nav-logo a {
@@ -11,7 +11,7 @@
   color: #333;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-left: 20px;
+  margin-left: 400px;
 }
 .nav-logo a:hover {
   color: #fff;
@@ -42,7 +42,7 @@
   color: #333333;
 }
 .nav-menu ul li a:hover {
-  color: #271de2;
+  color: #fff;
   transition: ease-in-out 0.5s;
 }
 .burger {
@@ -201,7 +201,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1050;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1250px) {
   .login-container {
     width: 80%;
     top: 75%;
@@ -224,6 +224,13 @@
     flex-wrap: wrap;
     border-radius: 4px;
     z-index: 1050;
+  }
+  .nav-logo a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
   }
 }
 .register-container h2 {
