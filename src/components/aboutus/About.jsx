@@ -7,8 +7,8 @@ const AboutUs = () => {
       <h2>About Us</h2>
       <div className="about-content">
         <p className="about-p">
-          Welcome to the Pekeng Store, where you can find high-quality products
-          for your everyday needs, ranging from clothing and jewelry to
+          Welcome to the Bakay Diri Store, where you can find high-quality
+          products for your everyday needs, ranging from clothing and jewelry to
           electronics. Our store caters to both men and women, providing a wide
           range of products that meet your everyday needs. If you're looking for
           stylish and trendy clothing, you've come to the right place. We have a
@@ -27,15 +27,15 @@ const AboutUs = () => {
           most reputable brands, ensuring that you get the best value for your
           money.
           <br className="about-br" />
-          At the Pekeng Store, we are committed to providing the best customer
-          experience and top-notch products at affordable prices. Our mission is
-          to make sure that our customers feel valued and appreciated at every
-          step of their shopping experience. <br /> We understand that shopping
-          can be a hassle, which is why we've made it our goal to provide a
-          comfortable and welcoming atmosphere that makes shopping a pleasant
-          experience. Our store is designed to be easy to navigate, with
-          products organized in a way that makes it easy for you to find what
-          you're looking for. <br />
+          At the PBakay Diri Store, we are committed to providing the best
+          customer experience and top-notch products at affordable prices. Our
+          mission is to make sure that our customers feel valued and appreciated
+          at every step of their shopping experience. <br /> We understand that
+          shopping can be a hassle, which is why we've made it our goal to
+          provide a comfortable and welcoming atmosphere that makes shopping a
+          pleasant experience. Our store is designed to be easy to navigate,
+          with products organized in a way that makes it easy for you to find
+          what you're looking for. <br />
           We also believe that high-quality products should be accessible to
           everyone, which is why we are committed to offering the best products
           at affordable prices. We source our products from the most reputable
