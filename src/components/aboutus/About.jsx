@@ -26,7 +26,7 @@ const AboutUs = () => {
           all. Our electronics collection features the latest products from the
           most reputable brands, ensuring that you get the best value for your
           money.
-          <br />
+          <br className="about-br" />
           At the Pekeng Store, we are committed to providing the best customer
           experience and top-notch products at affordable prices. Our mission is
           to make sure that our customers feel valued and appreciated at every
@@ -43,7 +43,10 @@ const AboutUs = () => {
           Thank you for choosing our store for your shopping needs.
         </p>
         <div className="about-img">
-          <img src="./src/assets/about.avif" alt="aboutusimg" />
+          <img
+            src="https://g.foolcdn.com/editorial/images/499247/womens-clothing-store.jpg"
+            alt="aboutusimg"
+          />
         </div>
       </div>
     </div>

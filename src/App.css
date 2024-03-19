@@ -7,9 +7,3 @@ body {
   padding: 0;
   background: linear-gradient(180deg, #00afb9, #fed9b7);
 }
-@media screen and (max-width: 768px) {
-  #About {
-    display: flex;
-    height: auto;
-  }
-}
